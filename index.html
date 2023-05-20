@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="person-selector">
+        <button class="button person-selector-button active-person" id="Fperson" onclick="messageSender('Jhon')">Jhon</button>
+        <button class="button person-selector-button" id="Sperson" onclick="messageSender('Jane')">Jane</button>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat">
+            <h2 class="chat-header">Jhon Chatting</h2>
+            <button class="button clear-button">Clear</button>
+        </div>
+        <div class="chat-messages">
+
+            <div class="message sender">
+                <div class="mesage-sender">Jhon</div>
+                <div class="chat-message">hey</div>
+                <div class="message-time">10:00PM</div>
+            </div>
+
+            <div class="message reciver">
+                <div class="mesage-sender">Jane</div>
+                <div class="chat-message">hey</div>
+                <div class="message-time">10:00PM</div>
+            </div>
+        </div>
+
+        <form class="chat-form">
+            <input type="text" class="chat-input" placeholder ="Type here , jhon..."required/>
+            <button class="button send-button">Send</button>
+        </form>
+    </div>
+
+    <script src="./js/message.js"></script>
+</body>
+
+</html>
